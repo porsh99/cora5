@@ -2226,6 +2226,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _component_vaccine_list_vaccine_list_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./component/vaccine-list/vaccine-list.component */ "sn4E");
 /* harmony import */ var _component_share_data_share_data_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./component/share-data/share-data.component */ "7NK5");
 /* harmony import */ var _component_profile_new_profile_new_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./component/profile-new/profile-new.component */ "1bv2");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! @angular/common */ "ofXK");
 
 
 
@@ -2267,11 +2268,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ // #new
 
 class AppModule {
 }
 AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_component_layout_layout_component__WEBPACK_IMPORTED_MODULE_14__["LayoutComponent"]] });
 AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [
+        { provide: _angular_common__WEBPACK_IMPORTED_MODULE_40__["APP_BASE_HREF"], useValue: '/' },
+        { provide: _angular_common__WEBPACK_IMPORTED_MODULE_40__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_40__["HashLocationStrategy"] },
         _service_config_service__WEBPACK_IMPORTED_MODULE_21__["ConfigService"],
         _service_auth_service__WEBPACK_IMPORTED_MODULE_20__["AuthService"],
         _service_session_service__WEBPACK_IMPORTED_MODULE_24__["SessionService"],
@@ -2367,6 +2371,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector
                     _component_profile_new_profile_new_component__WEBPACK_IMPORTED_MODULE_39__["ProfileNewComponent"]
                 ],
                 providers: [
+                    { provide: _angular_common__WEBPACK_IMPORTED_MODULE_40__["APP_BASE_HREF"], useValue: '/' },
+                    { provide: _angular_common__WEBPACK_IMPORTED_MODULE_40__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_40__["HashLocationStrategy"] },
                     _service_config_service__WEBPACK_IMPORTED_MODULE_21__["ConfigService"],
                     _service_auth_service__WEBPACK_IMPORTED_MODULE_20__["AuthService"],
                     _service_session_service__WEBPACK_IMPORTED_MODULE_24__["SessionService"],
